@@ -7,7 +7,15 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header><h1>Currency Converter</h1></header>
+  <header>
+    <img src="travelbuddylogo11098-24gl-200h.png" alt="Travel Buddy Logo" class="logo" />
+    <h1>Currency Converter</h1>
+    <nav>
+      <a href="country.html">Country Explorer</a>
+      <a href="currency.html">Currency Converter</a>
+      <a href="tips.html">Travel Tips</a>
+    </nav>
+  </header>
   <main>
     <input type="number" id="usd-amount" placeholder="Amount in USD" />
     <select id="currency-select"></select>
@@ -15,5 +23,15 @@
     <p id="conversion-result"></p>
   </main>
   <script src="currency.js"></script>
+  <section class="subscribe-section">
+    <div class="subscribe-container">
+      <h2>Find and Plan Your Next Trip with US!</h2>
+      <p>Travel Buddy will help you plan your perfect vacation and find the best destination for you</p>
+      <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+        <input type="email" placeholder="Email" required />
+        <button type="submit">Sign Up for New Deals</button>
+      </form>
+    </div>
+  </section>  
 </body>
 </html>
