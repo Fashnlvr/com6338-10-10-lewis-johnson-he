@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <img src="travelbuddylogo11098-24gl-200h.png" alt="Travel Buddy Logo" class="logo" />
+    <img src="images/logo.png" alt="Travel Buddy Logo" class="logo" />
     <h1>Travel Buddy</h1>
     <nav>
       <a href="country.html">Country Explorer</a>
@@ -23,5 +23,15 @@
     </section>
   </main>
   <script src="script.js"></script>
+  <section class="subscribe-section">
+    <div class="subscribe-container">
+      <h2>Find and Plan Your Next Trip with US!</h2>
+      <p>Travel Buddy will help you plan your perfect vacation and find the best destination for you</p>
+      <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+        <input type="email" placeholder="Email" required />
+        <button type="submit">Sign Up for New Deals</button>
+      </form>
+    </div>
+  </section>  
 </body>
 </html>
