@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+header {
+  background: #0077b6;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+input, select, button {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+#country-info, #conversion-result, #tips-container {
+  margin-top: 1rem;
+}
