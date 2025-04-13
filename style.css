@@ -212,30 +212,53 @@ button:hover {
   background-color: #6bb03c;
 }
 
-@media (min-width: 600px) {
-  .subscribe-form {
-    flex-direction: row;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .subscribe-form input[type="email"] {
-    flex: 3;
-    border-radius: 8px 0 0 8px;
-  }
-
-  .subscribe-form button {
-    flex: 1;
-    border-radius: 0 8px 8px 0;
-  }
+.country-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.country-info-container {
+.search-with-image {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 2rem auto;
+}
+
+.country-main .search-with-image {
+  text-align: center;
+}
+
+.country-search input {
+  width: 320px;
+  max-width: 100%;
+}
+
+.country-info-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
   margin-top: 2rem;
+  text-align: center;
+}
+
+.side-image img {
+  width: 240px;
+  height: 240px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.country-info-card {
+  max-width: 600px;
+  padding: 1rem;
+  flex: 1 1 300px;
 }
 
 .info-card {
@@ -243,41 +266,8 @@ button:hover {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  flex: 1 1 400px;
-  min-width: 300px;
 }
 
-.country-image-slot {
-  flex: 1 1 400px;
-  min-width: 300px;
-  text-align: center;
-}
-
-.country-image-slot img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-
-
-@media (min-width: 600px) 
-  .subscribe-form {
-    flex-direction: row;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .subscribe-form input[type="email"] {
-    flex: 3;
-    border-radius: 8px 0 0 8px;
-  }
-
-  .subscribe-form button {
-    flex: 1;
-    border-radius: 0 8px 8px 0;
-  }
 
   .currency-converter {
     display: flex;
@@ -323,9 +313,26 @@ button:hover {
     color: #000;
     margin-bottom: 1rem;
   }
-  
 
-/* Responsive */
+  @media (min-width: 600px) {
+    .subscribe-form {
+      flex-direction: row;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  
+    .subscribe-form input[type="email"] {
+      flex: 3;
+      border-radius: 8px 0 0 8px;
+    }
+  
+    .subscribe-form button {
+      flex: 1;
+      border-radius: 0 8px 8px 0;
+    }
+  }
+
+
 @media (max-width: 600px) {
   nav a {
     display: block;
