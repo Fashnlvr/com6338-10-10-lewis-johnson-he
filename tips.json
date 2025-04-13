@@ -1,24 +1,56 @@
 {
-  "tips": [
+  "General Travel Tips": [
     {
-      "country": "Japan",
-      "message": "Always bow when greeting someone. Avoid talking loudly in public transport."
+      "title": "What to Pack When Traveling?",
+      "message": "Roll your clothes instead of folding them to save space."
     },
+    {
+      "title": "10 Ways to Take Great Pictures",
+      "message": "Use natural lighting whenever possible, and take photos during golden hour for the best results."
+    },
+    {
+      "title": "Cheapest Ways to Rent Cars",
+      "message": "Always check if your driver’s license is accepted in the country you're visiting, and consider getting an International Driving Permit."
+    },
+    {
+      "title": "Is Converting Money Worth It?",
+      "message": "Compare rates online before converting currency, and avoid airport kiosks which often charge high fees."
+    }
+  ],
+  "Tips by Category": [
+    {
+      "title": "Culture",
+      "message": "Respect local customs and dress codes—research cultural norms before visiting temples, mosques, or traditional towns."
+    },
+    {
+      "title": "Internet",
+      "message": "Buy a local SIM card or an eSIM at the airport for affordable internet access throughout your trip."
+    },
+    {
+      "title": "History",
+      "message": "Visit local museums and historical sites to gain a deeper understanding of the country's culture and background."
+    },
+    {
+      "title": "Language",
+      "message": "Learn a few local phrases to help with communication and politeness."
+    }
+  ],
+  "Tips by Country": [
     {
       "country": "France",
-      "message": "Say 'Bonjour' when entering a store. Tipping is appreciated but not required."
+      "message": "Always greet shopkeepers with a polite 'Bonjour!"
     },
     {
-      "country": "Brazil",
-      "message": "Be aware of your surroundings in crowded places. A smile goes a long way."
+      "country": "United Kingdom",
+      "message": "Always stand on the right side of the escalator in the London Underground — locals take this very seriously!'"
     },
     {
-      "country": "Germany",
-      "message": "Be on time. Germans value punctuality and order."
+      "country": "Japan",
+      "message": "Use a Suica or Pasmo card for convenient train travel."
     },
     {
-      "country": "India",
-      "message": "Use your right hand when giving or receiving items. Dress modestly at temples."
+      "country": "United States",
+      "message": "Sales tax is not included in displayed prices, so expect to pay more than the tag price."
     }
   ]
 }
