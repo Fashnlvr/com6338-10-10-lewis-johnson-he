@@ -230,8 +230,39 @@ button:hover {
   }
 }
 
+.country-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
-@media (min-width: 600px) {
+.info-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+.country-image-slot {
+  flex: 1 1 400px;
+  min-width: 300px;
+  text-align: center;
+}
+
+.country-image-slot img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+@media (min-width: 600px) 
   .subscribe-form {
     flex-direction: row;
     border-radius: 8px;
@@ -247,7 +278,52 @@ button:hover {
     flex: 1;
     border-radius: 0 8px 8px 0;
   }
-}
+
+  .currency-converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 2rem auto;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .currency-converter input,
+  .currency-converter select,
+  .currency-converter button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .currency-converter button {
+    background-color: #3aafa9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .currency-converter button:hover {
+    background-color: #2b7a78;
+  }
+  
+  #conversion-result {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #2b7a78;
+  }
+  
+  .currency-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  
 
 /* Responsive */
 @media (max-width: 600px) {
