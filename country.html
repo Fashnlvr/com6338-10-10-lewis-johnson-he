@@ -18,23 +18,39 @@
     </nav>
   </header>
   <div class="page-wrapper">    
-    <!-- Hero Banner Section -->
     <section class="hero-banner">
       <div class="hero-text">
         <h2>Let’s Explore Our Next Destination</h2>
       </div>
     </section>
 
-  <main>
-    <input type="text" id="country-input" placeholder="Enter country name..." />
-    <button onclick="searchCountry()">Search</button>
-    <div id="country-info"></div>
-  </main>
+    <main class="content">
+      <div class="country-search">
+        <input type="text" id="country-input" placeholder="Enter country name..." />
+        <button onclick="searchCountry()">Search</button>
+      </div>
+    
+      <div class="country-info-wrapper">
+        <div class="side-image">
+          <img src="https://via.placeholder.com/200x200?text=Landmark+1" alt="Left Image">
+        </div>
+    
+        <div class="country-info-card">
+          <div id="country-info" class="info-card"></div>
+        </div>
+    
+        <div class="side-image">
+          <img src="https://via.placeholder.com/200x200?text=Landmark+2" alt="Right Image">
+        </div>
+      </div>
+    </main>
+    
+
   <script src="country.js"></script>
   <section class="subscribe-section">
     <div class="subscribe-container">
       <h2>Find and Plan Your Next Trip with US!</h2>
-      <p>Travel Buddy will help you plan your perfect vacation and find the best destination for you</p>
+      <p>Travel Buddy will help you plan your perfect vacation and find the best destination for you.</p>
       <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
         <input type="email" placeholder="Email" required />
         <button type="submit">Sign Up for New Deals</button>
