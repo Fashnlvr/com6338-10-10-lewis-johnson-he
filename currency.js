@@ -2,9 +2,7 @@ async function convertCurrency() {
   const amount = parseFloat(document.getElementById("usd-amount").value);
   const target = document.getElementById("currency-select").value;
 
-  const amountInput = document.getElementById('usd-amount');
-  const currencySelect = document.getElementById('currency-select');
-  const resultDisplay = document.getElementById('conversion-result');
+  if (!amount || !target) return;
 
   const res = await fetch(`https://open.er-api.com/v6/latest/USD`);
   const data = await res.json();
