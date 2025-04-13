@@ -18,6 +18,31 @@
   </header>
   <main>
     <div id="tips-container"></div>
+    // Load travel tips from static JSON file
+fetch('tips.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Failed to load travel tips");
+    }
+    return response.json();
+  })
+  .then(data => {
+    const container = document.getElementById('tips-container');
+    
+    data.tips.forEach(tip => {
+      const tipCard = document.createElement('div');
+      tipCard.className = 'tip-card';
+      tipCard.innerHTML = `
+        <h3>${tip.country}</h3>
+        <p>${tip.message}</p>
+      `;
+      container.appendChild(tipCard);
+    });
+  })
+  .catch(error => {
+    document.getElementById('tips-container').textContent = "Could not load tips.";
+    console.error(error);
+  });
   </main>
   <script src="tips.js"></script>
   <section class="subscribe-section">
