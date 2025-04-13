@@ -24,17 +24,23 @@
         <h2>Let’s Explore Our Next Destination</h2>
       </div>
     </section>
-  <main>
-    <input type="number" id="usd-amount" placeholder="Amount in USD" />
-    <select id="currency-select"></select>
-    <button onclick="convertCurrency()">Convert</button>
-    <p id="conversion-result"></p>
-  </main>
+    <main class="content">
+      <h2 class="currency-heading">Currency Conversion Calculator</h2>
+    
+      <div class="currency-converter">
+        <input type="number" id="usd-amount" placeholder="Amount in USD" />
+        <select id="currency-select"></select>
+        <button onclick="convertCurrency()">Convert</button>
+        <p id="conversion-result"></p>
+      </div>
+    </main>
+    
+    
   <script src="currency.js"></script>
   <section class="subscribe-section">
     <div class="subscribe-container">
       <h2>Find and Plan Your Next Trip with US!</h2>
-      <p>Travel Buddy will help you plan your perfect vacation and find the best destination for you</p>
+      <p>Travel Buddy will help you plan your perfect vacation and find the best destination for you.</p>
       <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
         <input type="email" placeholder="Email" required />
         <button type="submit">Sign Up for New Deals</button>
