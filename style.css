@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-/* Hero Banner Section */
+
 .hero-banner {
-  background-image: url('images/banner.jpg'); /* Replace with your actual image file path */
+  background-image: url('images/explorer.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,28 +21,28 @@
 .hero-text h2 {
   font-size: 2rem;
   font-weight: 700;
-  background: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+  background: rgba(0, 0, 0, 0.4); 
   padding: 1rem 2rem;
   border-radius: 8px;
 }
-/* BODY + GLOBAL BASE STYLES */
+
 body {
-  background-color: #ffffff; /* White background */
-  color: #2b2b2b; /* Dark text for contrast */
+  background-color: #ffffff; 
+  color: #2b2b2b; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-/* HEADER - NOW WHITE BACKGROUND */
+
 header {
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff; 
   color: #2b7a78;
   padding: 2rem 1rem;
   text-align: center;
   position: relative;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Light shadow for separation */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
 }
 
 header img.logo {
@@ -60,7 +60,7 @@ header h1 {
   color: #000;
 }
 
-/* NAVIGATION LINKS */
+
 nav {
   display: flex;
   justify-content: center;
@@ -85,7 +85,7 @@ nav a:hover {
   color: #ffffff;
 }
 
-/* MAIN CONTENT AREA (OPTIONAL WHITE) */
+
 .content, main {
   background-color: #ffffff;
   padding: 2rem 1rem;
@@ -117,58 +117,53 @@ button:hover {
   background-color: #2b7a78;
 }
 
-/* Info Blocks */
-#country-info,
-#conversion-result,
-#tips-container {
-  margin-top: 1rem;
-  background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.tips-section {
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
-#tips-container div {
+.tips-section h2 {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-#tips-container div {
-  background: #ffffff;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  text-align: left;
-}
 
-#tips-container h3 {
-  color: #2b7a78;
-  margin-bottom: 0.5rem;
-}
-
-/* Travel Tip Cards */
-#tips-container {
+.tips-grid {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .tip-card {
-  background: #f9f9f9;
-  border-left: 6px solid #3aafa9;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
+.tip-card img {
+  width: 100%;   
+  height: 200px;  
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
 
 .tip-card h3 {
-  margin-bottom: 0.5rem;
-  color: #2b7a78;
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
-/* Footer */
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+
 .subscribe-section {
-  background-color: #008241; /* Rich green like screenshot */
+  background-color: #008241;
   color: white;
   padding: 3rem 1rem;
   text-align: center;
@@ -206,7 +201,7 @@ button:hover {
   font-size: 1rem;
   font-weight: 600;
   color: white;
-  background-color: #82ce4f; /* Bright green button */
+  background-color: #82ce4f; 
   border: none;
   border-radius: 0 0 8px 8px;
   cursor: pointer;
