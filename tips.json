@@ -1,0 +1,24 @@
+{
+  "tips": [
+    {
+      "country": "Japan",
+      "message": "Always bow when greeting someone. Avoid talking loudly in public transport."
+    },
+    {
+      "country": "France",
+      "message": "Say 'Bonjour' when entering a store. Tipping is appreciated but not required."
+    },
+    {
+      "country": "Brazil",
+      "message": "Be aware of your surroundings in crowded places. A smile goes a long way."
+    },
+    {
+      "country": "Germany",
+      "message": "Be on time. Germans value punctuality and order."
+    },
+    {
+      "country": "India",
+      "message": "Use your right hand when giving or receiving items. Dress modestly at temples."
+    }
+  ]
+}
